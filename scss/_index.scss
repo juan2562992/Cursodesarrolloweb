@@ -1,0 +1,65 @@
+
+
+.inicio{
+    padding: 90px 10px 90px 10px;
+}
+
+.inicio-about{
+    padding: 50px 0px 40px 0px;
+    display:flex;
+    justify-content: end;
+}
+
+.inicio-textos{
+    width: 40%;
+}
+
+.inicio-textos h3{
+    text-align: justify;
+    margin-left: 50px;
+}
+
+.inicio-textos h3 span{
+    background: $ColorPrincipal;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: justify;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 10px;
+}
+
+
+.inicio-animado{
+    height: 350px;
+    width: 500px;
+    background-size: cover;
+    animation-name: IncioAnimado;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+    animation-timing-function: linear;
+}
+
+.carousel{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    padding: 70px 0 70px 0px;
+    margin-left: 200px;
+}
+
+
+.carousel-img{
+    width: auto;
+    margin-left: 65px;
+    margin-top: 40px
+}
+
+.carousel-bg{
+    background-color: rgb(241, 239, 239);
+
+}

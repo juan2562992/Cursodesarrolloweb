@@ -1,0 +1,75 @@
+.como-donar{
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+    .como-donar div{
+        width: 30%;
+        border: solid black 1px;
+        margin: 20px 10px;
+
+    }
+
+        .como-donar img{
+            width: 40%;
+            margin-top: 10px;
+        }
+
+            .como-donar p{
+                font-size: 1rem;
+                line-height: 1.2rem;
+                margin: 20px 0;
+                text-align: center;
+            }
+
+                .como-donar h2{
+                    font-size: 1.6rem;
+                    margin: 10px 10px;
+                }
+
+                    .como-donar a{
+                        text-decoration: none;
+                        color: black;
+                    }
+
+
+
+
+
+.button-30{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #91e4fb;
+    border-radius: 10px;
+    border: solid #0ec0ca 3px;
+    padding: 10px 20px;
+
+}
+
+
+    .button-50{
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        background-color: #91e4fb;
+        border-radius: 10px;
+        border: solid #0ec0ca 3px;
+        padding: 10px 20px;
+    }
+
+
+        .button-otrovalor{
+            display: inline-block;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            background-color: #91e4fb;
+            border-radius: 10px;
+            border: solid #0ec0ca 3px;
+            padding: 10px 20px;
+            margin: 5px 20px 10px 20px;
+        }

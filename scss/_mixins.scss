@@ -1,0 +1,48 @@
+//extends
+.btn-gral{
+    border: none;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: linear-gradient(to top, pink , deeppink);
+}
+
+.btn-rounded{
+    @extend .btn-gral;
+    border-radius: 4px;
+}
+
+.box-gral{
+    width: 98%;
+    padding: 10px 60px;
+    margin: auto;
+}
+
+.box-gray{
+    @extend .box-gral;
+    background-color: gray;
+}
+
+
+//mixins
+@mixin textos ($size, $line, $color){
+    font-size: $size;
+    line-height: $line;
+    color: $color;
+    font-family: $mainFont;
+}
+
+@mixin flex ($direction,$justify,$aling){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+//maps
+$paleta:(
+    
+)
+

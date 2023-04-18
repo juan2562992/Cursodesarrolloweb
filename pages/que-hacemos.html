@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,72 +8,132 @@
     <link rel="shortcut icon" href="../img/logos/fundacion_ayudanos_a_ayudar-01-02 (1).png" type="image/x-icon">
     <title>Ayudanos a ayudar Medellín - Fundación</title>
     <!-- link al css de BS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- link a mi css externo-->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
+
 <body>
-    <!-- inicia nav -->
-    <nav class="navbar navbar-expand-md botonera">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-                <!-- logo -->
-                <img src="../img/logos/Logo.png" alt="Logo de Ayudanos a Ayudar Medellín">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- btn hamburgesa -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list-nested" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z"/>
-                </svg>
-            </button>
-            <div class="collapse navbar-collapse"   id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 botonera">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">¿QUÉ HACEMOS?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="contacto.html">CONTACTO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="noticias-e-historias.html">NOTICIAS E HISTORIAS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">¿CÓMO DONAR?</a>
-                    </li>
-                </ul>
-            </div> 
-        </div>       
-    </nav>
-    <header class="text-center">
-        <h1>¿QUÉ HACEMOS?</h1>
+    
+    <header>
+        <nav class="navbar navbar-expand-md botonera">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <!-- logo -->
+                    <img src="../img/logos/Logo.png" alt="Logo de Ayudanos a Ayudar Medellín">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <!-- btn hamburgesa -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-list-nested" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 botonera">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">¿QUÉ HACEMOS?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="noticias-e-historias.html">NOTICIAS E
+                                HISTORIAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">¿CÓMO DONAR?</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>  
+        <div class="wave" style="height: 150px; overflow: hidden">
+            <svg
+              viewBox="0 0 500 150"
+              preserveAspectRatio="none"
+              style="height: 100%; width: 100%"
+            >
+              <path
+                d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                style="stroke: none; fill: rgb(255, 255, 255)"
+              ></path>
+            </svg>
+          </div>
     </header>
-    <main class="text-center">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus distinctio perferendis, libero iure voluptatum quaerat repellendus aspernatur, accusamus consequatur quod culpa non nihil? Sunt dignissimos ratione obcaecati incidunt enim odio!</p>
-        <div class="que-hacemos">
+    <main>
+     <div class="que-hacemos">
             <div>
-                <img src="../img/que-hacemos/foto1-que-hacemos.jpg" alt="">
-                <h2>Sobre Fundación Ayudanos a Ayudar</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis odit officiis amet alias totam labore possimus maxime nostrum voluptate, eius aperiam explicabo exercitationem id in blanditiis repellendus! Dignissimos, corrupti dicta.</p>
+                <span>2010</span>
+                <p>Inciamos como un grupo de Amigos deseando hacer Labor Social en el mes de diciembre con algunas familias campesinas de las veredas del municipio de Santa Bárbara.</p>
             </div>
             <div>
-                <img src="../img/que-hacemos/foto2-que-hacemos.jpg" alt="">
-                <h2>Sobre Fundación Ayudanos a Ayudar</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis odit officiis amet alias totam labore possimus maxime nostrum voluptate, eius aperiam explicabo exercitationem id in blanditiis repellendus! Dignissimos, corrupti dicta.</p>
+                <span>100%</span>
+                <p>ES EL PORCENTAJE DE LOS FONDOS QUE DESTINAMOS AL CUMPLIMIENTO DE NUESTRA MISIÓN Y CAUSA SOCIAL.</p>
             </div>
             <div>
-                <img src="../img/que-hacemos/foto3-que-hacemos.jpg" alt="">
-                <h2>Sobre Fundación Ayudanos a Ayudar</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis odit officiis amet alias totam labore possimus maxime nostrum voluptate, eius aperiam explicabo exercitationem id in blanditiis repellendus! Dignissimos, corrupti dicta.</p>
+                <span>7</span>
+                <p>SON LAS ENTIDADES LOCALES CON LAS QUE COOPERAMOS Y TRABAJAMOS EN COLOMBIA.</p>
+            </div>
+        </div>
+        <div class="mision">
+            <div>
+                <h2>Misión</h2>
+                <svg>
+                <line x1="1" y1="3" x2="200" y2="3">
+                </svg>
+            </div>
+            <div>
+                <p>La Fundación Ayúdanos A Ayudar Medellín es una entidad sin ánimo de lucro que ofrece una mano amiga, un acompañamiento y un seguimiento a grupos de familias  y comunidades carentes de recursos y de gestión para llevar a cabo soluciones de vivienda y satisfacción de otras necesidades fundamentales.</p>
+            </div>
+        </div>
+        <div class="vision">
+            <div>
+                <h2>Visión</h2>
+                <svg>
+                    <line x1="1" y1="3" x2="200" y2="3">
+                </svg>
+            </div>
+            <div>
+                <p>La Fundación Ayúdanos A Ayudar Medellín  seguirá siendo una organización reconocida y posicionada por una gestión fortalecida en competencias y habilidades humanas, sociales, ocupacionales y productivas; generando confianza y credibilidad, sustentada en la corresponsabilidad, transparencia, efectividad y solidaridad.</p>
             </div>
         </div>
     </main>
-    <footer>
-        <a href="https://www.facebook.com/photo.php?fbid=553803463459538&set=pb.100064896661596.-2207520000.&type=3" target="_blank">
-            <img src="../img/iconos/facebook.png" alt="">
-        </a>
-        <p>Fundación Ayúdanos a Ayudar Medellín</p>
-    </footer>
     <!-- cargo el Js de BS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
+<footer>
+    <a
+      href="https://www.facebook.com/photo.php?fbid=553803463459538&set=pb.100064896661596.-2207520000.&type=3"
+      target="_blank"
+    >
+      <img src="../img/iconos/facebook.png" alt="" />
+    </a>
+    <a
+      href="#"
+      target="_blank"
+    >
+      <img src="../img/iconos/Intragram.png" alt="" />
+    </a>
+    <a
+      href="#"
+      target="_blank"
+    >
+      <img src="../img/iconos/YouTube.png" alt="" />
+    </a>
+    <a
+      href="#"
+      target="_blank"
+    >
+      <img src="../img/iconos/Whatsapp.png" alt="" />
+    </a>
+    <p>Fundación Ayúdanos a Ayudar Medellín</p>
+  </footer>
+
 </html>

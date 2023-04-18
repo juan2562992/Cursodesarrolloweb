@@ -1,0 +1,77 @@
+.noticias-e-historias{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 100px repeat(5,300px);
+    grid-template-areas:
+    "seccion seccion seccion"
+    "uno dos tres"
+    "cuatro cuatro cuatro"
+    "cuatro cuatro cuatro";
+    gap: 50px;
+    margin: 150px 0 30px 30px;
+}
+
+
+.noticias-e-historias .seccion{
+    grid-area: seccion;
+    display: flex;
+  flex-direction: column;
+    justify-content: center;
+    text-align: center;  
+}
+
+.noticias-e-historias .seccion h2{
+    margin-bottom: 10px;
+}
+
+.noticias-e-historias .seccion p{
+    margin-bottom: 70px;
+}
+
+    .noticias-e-historias .img1{
+       grid-area: uno;
+    }
+
+
+    .noticias-e-historias .img2{    
+        grid-area: dos;
+ 
+    }
+
+    .noticias-e-historias .img3{
+        grid-area: tres;
+    }
+
+
+    .img-wh{
+        width: 100%;
+    }
+
+    .noticias-e-historias .img4{
+        grid-area: cuatro;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .noticias-e-historias .img4 h3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: $mainFont;
+        color: $ColorPrincipal;
+        text-shadow: 0em 0.009em 0.1em rgba(0, 0, 0, 0.226);
+        margin-left: 40px;
+    }
+
+     .noticias-e-historias .img4 p{
+        font-size: 1.5em;
+        text-align: center;
+     }
+
+
+    .img-wh2{
+        width: 67%;
+        height: 100%;
+    }

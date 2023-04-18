@@ -1,0 +1,73 @@
+h1,
+h2,
+h3{
+    font-family: $mainFont;
+    
+    
+}
+
+h1{
+    color:$ColorPrincipal;
+    font-size: $textLg;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: $textMd;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h3{
+    font-size: $textSm;
+}
+
+p{
+    color: $ColorParrafo;
+    font-family: 'Arial', sans-serif;
+    font-size: $textSm;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 0 40px;
+    text-align: justify;
+}
+
+header{
+    width: 100%;
+    height: 450px;
+    background: #0ec0ca;  
+    background: -webkit-linear-gradient(to bottom, #0ec0ca, hsla(191, 78%, 68%, 0.445)), url(../img/header/IMG-20170203-WA0034.jpg);  
+    background: linear-gradient(to bottom, #0ec0ca,  hsla(191, 78%, 68%, 0.445)), url(../img/header/IMG-20170203-WA0034.jpg); 
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.bg-gris{
+    background-color: rgb(241, 239, 239);
+}
+
+footer{
+    bottom: 0;
+    padding: 20px 30px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #444444;
+    }
+
+    footer img{
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    footer p{
+        text-decoration: none;
+        color: black;
+        
+    }
