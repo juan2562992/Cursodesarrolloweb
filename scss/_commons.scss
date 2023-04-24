@@ -2,21 +2,16 @@ h1,
 h2,
 h3{
     font-family: $mainFont;
-    
-    
+    color: $ColorPrincipal;
 }
 
 h1{
-    color:$ColorPrincipal;
-    font-size: $textLg;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    @include h1-h2($textLg, 40px, 20px);
 }
 
 h2{
-    font-size: $textMd;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    @include h1-h2($textMd, 40px, 10px);
+    
 }
 
 h3{
@@ -26,20 +21,25 @@ h3{
 p{
     color: $ColorParrafo;
     font-family: 'Arial', sans-serif;
-    font-size: $textSm;
-    margin-left: 20px;
-    margin-top: 10px;
-    padding: 0 40px;
+    font-size: 1.3em;
+    margin: 10px 20px 10px 10px;
+    padding: 0 10px;
     text-align: justify;
 }
 
 header{
     width: 100%;
     height: 450px;
-    background: #0ec0ca;  
-    background: -webkit-linear-gradient(to bottom, #0ec0ca, hsla(191, 78%, 68%, 0.445)), url(../img/header/IMG-20170203-WA0034.jpg);  
-    background: linear-gradient(to bottom, #0ec0ca,  hsla(191, 78%, 68%, 0.445)), url(../img/header/IMG-20170203-WA0034.jpg); 
 }
+
+.header-secundario{
+    width: 100%;
+    height: 300px;
+    background: #0ec0ca;  
+    background: -webkit-linear-gradient(to bottom, #0ec0ca, hsla(191, 78%, 68%, 0)), url();  
+    background: linear-gradient(to bottom, #0ec0ca,  hsla(191, 78%, 68%, 0)), url(); 
+}
+
 
 .wave{
     position: absolute;

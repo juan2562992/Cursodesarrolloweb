@@ -3,3 +3,9 @@
     50%{background-image: url(/img/que-hacemos/foto2-que-hacemos.jpg)}
     100%{background-image: url(/img/que-hacemos/foto3-que-hacemos.jpg)}
 }
+
+@keyframes IncioAnimado2{
+    0%{background: linear-gradient(to bottom, #0ec1caad,  hsla(191, 78%, 68%, 0.137)), url(/img/header/index/niño.webp)}
+    50%{background: linear-gradient(to bottom, #0ec1caad,  hsla(191, 78%, 68%, 0.137)), url(/img/header/index/Ansiano-asilo.webp)}
+    100%{background: linear-gradient(to bottom, #0ec1caad,  hsla(191, 78%, 68%, 0.137)), url(/img/header/index/Entrega-vivienda.webp)}
+}

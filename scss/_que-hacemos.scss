@@ -2,95 +2,68 @@ h1{
     text-align: center;
 }
 .que-hacemos{
-    padding: 70px 30px;
-    margin: 20px 80px;
-    display: flex;
-    flex-direction: row;
+    @include flex (70px 30px, 120px 80px, row, space-between);
     flex-wrap: wrap;
-    justify-content: space-between;
     text-align: center;
-}
-
-    .que-hacemos div{
+    div{
         width: 30%;
         border: dashed $ColorPrincipal 2px;
-        margin-top: 40px;
-    }
-
-        .que-hacemos span{
+        margin-top: 40px; 
+        span{
             margin-top: 20px;
             font-size: $textLg;
             font-family: $mainFont;
             color: $ColorPrincipal;
             text-shadow: 0em 0.009em 0.1em rgba(0, 0, 0, 0.226);
         }
-
-
-            .que-hacemos p{
-                font-family: $mainFont;
-                color: $ColorPrincipal;
-                font-size: $textSm;
-                line-height: 1.5em;
-                margin: 10px 0 40px 0;
-                text-shadow: 0em 0.009em 0.1em rgba(0, 0, 0, 0.226);
-                text-transform: uppercase;
-                text-align: center;
-            }
-
-
-.mision{
-    padding: 40px 50px;
-    margin: 0px 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
+        p{
+            font-family: $mainFont;
+            color: $ColorPrincipal;
+            font-size: $textSm;
+            line-height: 1.5em;
+            margin: 10px 0 40px 0;
+            text-shadow: 0em 0.009em 0.1em rgba(0, 0, 0, 0.226);
+            text-transform: uppercase;
+            text-align: center;  
+        }
+    }
+}
+.que-hacemos{
+@include media(tablet){
+    @include flex (70px 30px, 120px 80px, column, space-between);
+    align-items: center;
 }
 
-    .mision h2{
-        display: inline-block;
-        font-family: $mainFont;
-        font-size: $textMd;
-        font-weight: 500;
-    }
+}
 
-    .mision line{
+.mision{
+    @include flex (40px 50px, 0px 70px, row, space-between);
+    h2{
+        @include h2-que-hacemos(inline-block, $textMd,500);
+    }
+    line{
         stroke: $ColorPrincipal;
         stroke-width: 3;
     }
+    p{
+        @include p-que-hacemos (inline-block, 40px 0, 100px, $textSm);
+    }
+}
 
-        .mision p{
-        display: inline-block;
-        padding: 40px 0;
-        margin-left: 100px;
-        font-family: $mainFont;
-        font-size: $textSm;
-        }
+
 
 .vision{
+    @extend .mision;
     padding: 0px 50px;
     margin: 0px 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.vision h2{
-    display: inline-block;
-    font-family: $mainFont;
-    font-size: $textMd;
-    font-weight: 500;
-}
-
-.vision line{
-    stroke: $ColorPrincipal;
-    stroke-width: 3;
-}
-
-    .vision p{
-    display: inline-block;
-    padding: 40px 0;
-    margin-left: 100px;
-    font-family: $mainFont;
-    font-size: $textSm;
+    h2{
+        @include h2-que-hacemos(inline-block, $textMd,500); 
     }
+    line{
+        stroke: $ColorPrincipal;
+        stroke-width: 3;
+    }
+    p{
+        @include p-que-hacemos (inline-block, 40px 0, 100px, $textSm); 
+    }
+}

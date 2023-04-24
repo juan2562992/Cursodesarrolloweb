@@ -2,24 +2,23 @@
     display: block;
     width: 50%;
     height: 40%;
-    margin: 10px 30px;
-}
-
-    .contacto label{
+    margin: 120px 30px;
+    label{
         font-size: 1em;
         color: #0ec0ca;
         font-family: 'Roboto', sans-serif;
     }
+    button{
+        color: #000000;
+        background-color: #91e4fb;
+        border-radius: 1px;
+        border: solid #0ec0ca 3px;
+        padding: 10px;
+    }
+}
 
-        .input{
-            border-radius: 0;
-            border: solid 1px black;
-        }
 
-            button{
-                color: #000000;
-                background-color: #91e4fb;
-                border-radius: 1px;
-                border: solid #0ec0ca 3px;
-                padding: 10px;
-            }
+.input{
+    border-radius: 0;
+    border: solid 1px black;
+}

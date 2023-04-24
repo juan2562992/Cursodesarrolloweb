@@ -1,44 +1,39 @@
 .como-donar{
-    padding: 0 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
+    @include flex (0 30px, 120px 40px, column, center);
+    h2{
+            font-size: $textMd;
+            margin: 10px 10px;
+            text-align: center; 
+        }
+    p{
+        font-size: 1.4em;
+        margin: 20px 0;
+        text-align: center;  
+    }
+    .donacion{
+        @include flex (0 30px, 0px, row, center);
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        
+        div{
+            width: 30%;
+            border: solid black 1px;
+            margin: 20px 10px;
+        }
+        
+        a{
+            text-decoration: none;
+            color: black; 
+        }
+    }
 }
 
-    .como-donar div{
-        width: 30%;
-        border: solid black 1px;
-        margin: 20px 10px;
-
+.como-donar{
+    @include media(tablet){
+        @include flex (0 30px, 120px 60px, column, center);
     }
-
-        .como-donar img{
-            width: 40%;
-            margin-top: 10px;
-        }
-
-            .como-donar p{
-                font-size: 1rem;
-                line-height: 1.2rem;
-                margin: 20px 0;
-                text-align: center;
-            }
-
-                .como-donar h2{
-                    font-size: 1.6rem;
-                    margin: 10px 10px;
-                }
-
-                    .como-donar a{
-                        text-decoration: none;
-                        color: black;
-                    }
-
-
-
-
+}
 
 .button-30{
     display: inline-block;
@@ -73,3 +68,5 @@
             padding: 10px 20px;
             margin: 5px 20px 10px 20px;
         }
+
+

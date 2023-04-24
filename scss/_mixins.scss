@@ -1,32 +1,11 @@
-//extends
-.btn-gral{
-    border: none;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    background: linear-gradient(to top, pink , deeppink);
-}
-
-.btn-rounded{
-    @extend .btn-gral;
-    border-radius: 4px;
-}
-
-.box-gral{
-    width: 98%;
-    padding: 10px 60px;
-    margin: auto;
-}
-
-.box-gray{
-    @extend .box-gral;
-    background-color: gray;
-}
-
-
 //mixins
+
+@mixin h1-h2($size, $top, $bottom){
+    font-size: $size;
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
 @mixin textos ($size, $line, $color){
     font-size: $size;
     line-height: $line;
@@ -34,15 +13,54 @@
     font-family: $mainFont;
 }
 
-@mixin flex ($direction,$justify,$aling){
+@mixin grid-flex ($area, $direction, $justify, $aling, $color){
     display: flex;
+    grid-area: $area;
     flex-direction: $direction;
     justify-content: $justify;
-    align-items: $aling;
+    text-align: $aling;
+    background-color: $color;
+    border-radius: 10px;
 }
 
-//maps
-$paleta:(
-    
-)
+@mixin flex ($padding, $margin, $direction, $justify){
+    display: flex;
+    padding: $padding;
+    margin: $margin;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
 
+@mixin h2-que-hacemos ($display, $size, $font){
+    display: $display;
+    font-family: $mainFont;
+    font-size: $size;
+    font-weight: $font;
+}
+
+@mixin p-que-hacemos ($display, $padding, $margin, $size){
+    display: $display;
+    padding: $padding;
+    margin-left: $margin;
+    font-family: $mainFont;
+    font-size: $size;
+}
+
+
+@mixin media($breakpoint){
+    @if $breakpoint == mobile{
+        @media (width < 768px){
+            @content;
+        }
+    }
+    @if $breakpoint == tablet{
+        @media (width < 1100px){
+            @content;
+        }
+    }
+    @if $breakpoint == desktop{
+        @media (width > 1101px){
+            @content;
+        }
+    }
+}
