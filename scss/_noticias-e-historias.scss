@@ -1,5 +1,25 @@
-.section-noticias-e-historias{
-   width: 100%;
+.header-asilo{
+    width: 100%;
+    height: 600px;
+    background: #0ec0ca;  
+    background: -webkit-linear-gradient(to bottom, #0ec1cab7, hsla(191, 78%, 68%, 0.212)), url(../img/header/index/Anciano-asilo.webp);  
+    background: linear-gradient(to bottom, #0ec1caab,  hsla(191, 78%, 68%, 0.192)), url(../img/header/index/Anciano-asilo.webp); 
+    background-size: cover;
+    animation-name: IncioAnimado2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    h1{
+        font-size: $textLg;
+        color:#fff;
+        text-align: center;
+        margin-top: 100px
+    }
+}
+
+
+.section-noticias-e-historias {
+    width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -8,50 +28,46 @@
     font-weight: 500;
 }
 
-
-
-.noticias-e-historias{
+.noticias-e-historias {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    "card1 card1 card2"
-    "card3 card4 card5";
+        "card1 card1 card2"
+        "card3 card4 card5";
     column-gap: 90px;
     row-gap: 50px;
     margin: 40px 100px;
-    .card1{
-        @include grid-flex (card1,column,center,center,rgb(241, 239, 239))
+    .card1 {
+        @include grid-flex(card1, column, center, center, rgb(241, 239, 239));
     }
-    .card2{
-        @include grid-flex (card2,column,start,center,rgb(241, 239, 239))  
+    .card2 {
+        @include grid-flex(card2, column, start, center, rgb(241, 239, 239));
     }
-    .card3{
+    .card3 {
         @extend .card2;
         grid-area: card3;
     }
-    .card4{
+    .card4 {
         @extend .card2;
         grid-area: card4;
     }
-    .card5{
+    .card5 {
         @extend .card2;
-        grid-area: card5;  
+        grid-area: card5;
     }
-    .text-card{
+    .text-card {
         text-align: justify;
         margin: 10px 0px;
-        h2{
+        h2 {
             text-align: justify;
             font-size: $textSm;
-            box-shadow: 0 0 1px 0 rgba(0, 0, 0, .5);    
+            box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
         }
-
     }
-    
 }
 
-.noticias-e-historias{
+/* .noticias-e-historias{
     @include media(mobile){
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -71,45 +87,43 @@
             box-shadow: 0 0 1px 0 rgba(0, 0, 0, .5);   
         }
     }
-}
+} */
 
-.noticias-e-historias{
-    @include media(tablet){
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3,auto) ;
-        grid-template-areas:
-        "card1 card1"
-        "card2 card3" 
-        "card4 card5";
-        margin: 40px 100px 40px 100px ;
+// .noticias-e-historias{
+//     @media (width < 768px) {
+//         display: grid;
+//         grid-template-columns: 1fr 1fr;
+//         grid-template-rows: repeat(3,auto) ;
+//         grid-template-areas:
+//         "card1 card1"
+//         "card2 card3"
+//         "card4 card5";
+//         margin: 40px 100px 40px 100px ;
+//     }
+// }
+
+.img4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 30px 30px 30px;
+    margin: 40px 100px;
+    h3 {
+        text-align: justify;
+        font-family: $mainFont;
+        color: $ColorPrincipal;
+        text-shadow: 0em 0.009em 0.1em rgba(0, 0, 0, 0.226);
+        margin: 40px 40px 10px 40px;
+    }
+    p {
+        font-size: 1.5em;
+        text-align: justify;
+        margin: 20px 30px;
     }
 }
-
-
-
-.img4{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 30px 30px 30px 30px;
-        margin: 40px 100px;
-        h3{
-            text-align: justify;
-            font-family: $mainFont;
-            color: $ColorPrincipal;
-            text-shadow: 0em 0.009em 0.1em rgba(0, 0, 0, 0.226);
-            margin: 40px 40px 10px 40px;    
-        }
-        p{
-            font-size: 1.5em;
-            text-align: justify; 
-            margin: 20px 30px;
-        }
-    }
-    .img-card{
-        width: 100%;
-    }
-    .img-wh2{
-        width: 100%;
-    }
+.img-card {
+    width: 100%;
+}
+.img-wh2 {
+    width: 100%;
+}

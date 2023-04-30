@@ -99,52 +99,12 @@ footer p {
   background-size: 100% 2px;
 }
 
-.inicio {
-  padding: 90px 10px 90px 10px;
-}
-
-.inicio-about {
-  padding: 50px 0px 40px 0px;
-  display: flex;
-  justify-content: end;
-}
-
-.inicio-textos {
-  width: 40%;
-}
-.inicio-textos h3 {
-  text-align: justify;
-  margin-left: 50px;
-}
-.inicio-textos h3 span {
-  background: #0ec0ca;
-  color: #fff;
-  border-radius: 50%;
-  display: inline-block;
-  text-align: justify;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
-  margin-right: 10px;
-}
-
-.inicio-animado {
-  height: 350px;
-  width: 500px;
-  background-size: cover;
-  animation-name: IncioAnimado;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-.inicio-animado2 {
+.header-niño1 {
   width: 100%;
   height: 600px;
   background: #0ec0ca;
-  background: -webkit-linear-gradient(to bottom, #0ec0ca, hsla(191, 78%, 68%, 0.445)), url(../img/header/index/niño.webp);
-  background: linear-gradient(to bottom, #0ec0ca, hsla(191, 78%, 68%, 0.445)), url(../img/header/index/niño.webp);
+  background: -webkit-linear-gradient(to bottom, rgba(14, 193, 202, 0.6431372549), hsla(191, 78%, 68%, 0.445)), url(../img/header/index/niño.webp);
+  background: linear-gradient(to bottom, rgba(14, 193, 202, 0.7333333333), hsla(191, 78%, 68%, 0.445)), url(../img/header/index/niño.webp);
   background-size: cover;
   animation-name: IncioAnimado2;
   animation-duration: 10s;
@@ -152,22 +112,75 @@ footer p {
   animation-timing-function: linear;
 }
 
-.carousel {
-  width: 70%;
+.textos-header {
   display: flex;
+  height: 430px;
+  width: 100%;
   align-items: center;
-  padding: 70px 0 70px 0px;
-  margin-left: 200px;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.textos-header h1 {
+  font-size: 3.5em;
+  color: #fff;
+}
+.textos-header h2 {
+  font-size: 2.5em;
+  font-weight: 300;
+  color: black;
+  font-size: 1.6em;
+  text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
 }
 
-.carousel-img {
-  width: auto;
-  margin-left: 65px;
+.inicio-about {
+  width: 100%;
+  padding: 100px 0 200px 0;
+  background-color: rgb(241, 239, 239);
+}
+.inicio-about .container {
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.inicio-about .container .inicio-textos {
+  max-width: 400px;
   margin-top: 40px;
+}
+.inicio-about .container .inicio-textos h3 {
+  max-width: 400px;
+  font-size: 60px;
+  font-weight: 900;
+  text-align: justify;
+  text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+}
+.inicio-about .container .inicio-textos p {
+  margin-left: 10px;
+  color: #373737;
+}
+.inicio-about .container .inicio-animado {
+  bottom: 10px;
+  right: 0px;
+  height: 350px;
+  width: 600px;
+  background-size: cover;
+  animation-name: IncioAnimado;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .carousel-bg {
-  background-color: rgb(241, 239, 239);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-bg .carousel {
+  width: 70%;
+  padding-top: 80px;
 }
 
 @keyframes IncioAnimado {
@@ -181,68 +194,23 @@ footer p {
     background-image: url(/img/que-hacemos/foto3-que-hacemos.jpg);
   }
 }
-@keyframes IncioAnimado2 {
-  0% {
-    background: linear-gradient(to bottom, rgba(14, 193, 202, 0.6784313725), hsla(191, 78%, 68%, 0.137)), url(/img/header/index/niño.webp);
-  }
-  50% {
-    background: linear-gradient(to bottom, rgba(14, 193, 202, 0.6784313725), hsla(191, 78%, 68%, 0.137)), url(/img/header/index/Ansiano-asilo.webp);
-  }
-  100% {
-    background: linear-gradient(to bottom, rgba(14, 193, 202, 0.6784313725), hsla(191, 78%, 68%, 0.137)), url(/img/header/index/Entrega-vivienda.webp);
-  }
+.header-vivienda {
+  width: 100%;
+  height: 600px;
+  background: #0ec0ca;
+  background: -webkit-linear-gradient(to bottom, rgba(14, 193, 202, 0.7176470588), hsla(191, 78%, 68%, 0.212)), url(../img/header/Entrega_vivienda.jpg);
+  background: linear-gradient(to bottom, rgba(14, 193, 202, 0.6705882353), hsla(191, 78%, 68%, 0.192)), url(../img/header/index/Entrega-vivienda.webp);
+  background-size: cover;
+  animation-name: IncioAnimado2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-@media (width > 1327px) {
-  header {
-    height: 600px;
-  }
-}
-@media (width < 1327px) {
-  header {
-    height: 500px;
-  }
-  h2 {
-    font-size: 1.5em;
-    padding: 0 10px;
-  }
-  .carousel {
-    margin-left: 150px;
-  }
-  h1 {
-    font-size: 3em;
-    margin-top: 90px;
-  }
-}
-@media (width < 1152px) {
-  h1 {
-    font-size: 3em;
-    margin-top: 20px;
-  }
-  .inicio-about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
-  }
-  .inicio-textos {
-    width: 70%;
-  }
-  .carousel {
-    margin-left: 120px;
-  }
-  .como-donar {
-    padding: 0 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-  .como-donar p {
-    margin: 20px 60px;
-  }
-}
-h1 {
+.header-vivienda h1 {
+  font-size: 3.5em;
+  color: #fff;
   text-align: center;
+  margin-top: 200px;
 }
 
 .que-hacemos {
@@ -275,17 +243,6 @@ h1 {
   text-shadow: 0em 0.009em 0.1em rgba(0, 0, 0, 0.226);
   text-transform: uppercase;
   text-align: center;
-}
-
-@media (width < 1100px) {
-  .que-hacemos {
-    display: flex;
-    padding: 70px 30px;
-    margin: 120px 80px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
 
 .mision, .vision {
@@ -333,6 +290,25 @@ h1 {
   margin-left: 100px;
   font-family: "Roboto", sans-serif;
   font-size: 1.6em;
+}
+
+.header-asilo {
+  width: 100%;
+  height: 600px;
+  background: #0ec0ca;
+  background: -webkit-linear-gradient(to bottom, rgba(14, 193, 202, 0.7176470588), hsla(191, 78%, 68%, 0.212)), url(../img/header/index/Anciano-asilo.webp);
+  background: linear-gradient(to bottom, rgba(14, 193, 202, 0.6705882353), hsla(191, 78%, 68%, 0.192)), url(../img/header/index/Anciano-asilo.webp);
+  background-size: cover;
+  animation-name: IncioAnimado2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.header-asilo h1 {
+  font-size: 3.5em;
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
 }
 
 .section-noticias-e-historias {
@@ -391,35 +367,27 @@ h1 {
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 
-@media (width < 768px) {
-  .noticias-e-historias {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "card1 card1" "card2 card3" "card4 card5";
-    margin: 40px 100px 40px 100px;
-  }
-}
-.noticias-e-historias .text-card {
-  text-align: justify;
-  margin: 10px 0px;
-}
-.noticias-e-historias .text-card h2 {
-  text-align: justify;
-  font-size: 1.4em;
-  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
-}
-
-@media (width < 1100px) {
-  .noticias-e-historias {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "card1 card1" "card2 card3" "card4 card5";
-    margin: 40px 100px 40px 100px;
-  }
-}
-
+/* .noticias-e-historias{
+    @include media(mobile){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3,auto) ;
+        grid-template-areas:
+        "card1 card1"
+        "card2 card3" 
+        "card4 card5";
+        margin: 40px 100px 40px 100px ;
+    }
+    .text-card{
+        text-align: justify;
+        margin: 10px 0px;
+        h2{
+            text-align: justify;
+            font-size: 1.4em;
+            box-shadow: 0 0 1px 0 rgba(0, 0, 0, .5);   
+        }
+    }
+} */
 .img4 {
   display: flex;
   flex-direction: column;
@@ -446,6 +414,25 @@ h1 {
 
 .img-wh2 {
   width: 100%;
+}
+
+.header-donacion {
+  width: 100%;
+  height: 600px;
+  background: #0ec0ca;
+  background: -webkit-linear-gradient(to bottom, rgba(14, 193, 202, 0.7176470588), hsla(191, 78%, 68%, 0.212)), url(../img/noticias-e-historias/Casa-nueva.jpg);
+  background: linear-gradient(to bottom, rgba(14, 193, 202, 0.6705882353), hsla(191, 78%, 68%, 0.192)), url(../img/noticias-e-historias/Casa-nueva.jpg);
+  background-size: cover;
+  animation-name: IncioAnimado2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.header-donacion h1 {
+  font-size: 3.5em;
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
 }
 
 .como-donar {
@@ -485,16 +472,11 @@ h1 {
   color: black;
 }
 
-@media (width < 1100px) {
-  .como-donar {
-    display: flex;
-    padding: 0 30px;
-    margin: 120px 60px;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
+/* .como-donar{
+    @include media(tablet){
+        @include flex (0 30px, 120px 60px, column, center);
+    }
+} */
 .button-30 {
   display: inline-block;
   font-family: "Roboto", sans-serif;
@@ -526,6 +508,25 @@ h1 {
   margin: 5px 20px 10px 20px;
 }
 
+.header-contacto {
+  width: 100%;
+  height: 600px;
+  background: #0ec0ca;
+  background: -webkit-linear-gradient(to bottom, rgba(14, 193, 202, 0.7176470588), hsla(191, 78%, 68%, 0.212)), url(../img/noticias-e-historias/Casa-fundacion.jpg);
+  background: linear-gradient(to bottom, rgba(14, 193, 202, 0.6705882353), hsla(191, 78%, 68%, 0.192)), url(../img/noticias-e-historias/Casa-fundacion.jpg);
+  background-size: cover;
+  animation-name: IncioAnimado2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.header-contacto h1 {
+  font-size: 3.5em;
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+}
+
 .contacto {
   display: block;
   width: 50%;
@@ -548,6 +549,119 @@ h1 {
 .input {
   border-radius: 0;
   border: solid 1px black;
+}
+
+.container-404 {
+  background: #0ec0ca;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-404 .error-404 {
+  display: block;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  line-height: 1.7;
+  color: #434343;
+}
+.container-404 .error-404 .boton {
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  background: #0ec0ca;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  .header-niño1,
+  .header-vivienda,
+  .header-asilo,
+  .header-donacion {
+    background-position: center;
+  }
+}
+@media (width < 768px) {
+  .textos-header h1 {
+    font-size: 3em;
+  }
+  .textos-header h2 {
+    font-size: 1.5em;
+    margin: 0 40px;
+  }
+  .inicio-about {
+    padding: 0 40px;
+  }
+  .inicio-about .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inicio-about .container .inicio-textos {
+    margin: 40px;
+  }
+  .inicio-about .container .inicio-textos h3 {
+    text-align: center;
+  }
+  .inicio-about .container .inicio-textos p {
+    margin: 0px;
+    text-align: justify;
+  }
+  .inicio-about .container .inicio-animado {
+    margin-bottom: 100px;
+  }
+  .header-vivienda h1 {
+    font-size: 2.5em;
+  }
+  .que-hacemos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .que-hacemos div {
+    width: 90%;
+  }
+  .mision, .vision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mision h2, .vision h2 {
+    display: block;
+  }
+  .mision p, .vision p {
+    display: inline-block;
+  }
+  .noticias-e-historias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "card1 card1" "card2 card3" "card4 card5";
+    margin: 100px;
+  }
+  .header-secundario {
+    width: 100%;
+  }
+  .inicio-about .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

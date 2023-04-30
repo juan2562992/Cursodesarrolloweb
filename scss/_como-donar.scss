@@ -1,3 +1,23 @@
+.header-donacion{
+    width: 100%;
+    height: 600px;
+    background: #0ec0ca;  
+    background: -webkit-linear-gradient(to bottom, #0ec1cab7, hsla(191, 78%, 68%, 0.212)), url(../img/noticias-e-historias/Casa-nueva.jpg);  
+    background: linear-gradient(to bottom, #0ec1caab,  hsla(191, 78%, 68%, 0.192)), url(../img/noticias-e-historias/Casa-nueva.jpg); 
+    background-size: cover;
+    animation-name: IncioAnimado2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    h1{
+        font-size: $textLg;
+        color:#fff;
+        text-align: center;
+        margin-top: 100px
+    }
+}
+
+
 .como-donar{
     @include flex (0 30px, 120px 40px, column, center);
     h2{
@@ -29,11 +49,11 @@
     }
 }
 
-.como-donar{
+/* .como-donar{
     @include media(tablet){
         @include flex (0 30px, 120px 60px, column, center);
     }
-}
+} */
 
 .button-30{
     display: inline-block;

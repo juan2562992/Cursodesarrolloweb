@@ -1,53 +1,97 @@
-@media (width > 1327px){
-    header{
-        height: 600px;
+@media screen and (max-width:900px){
+    .header-niño1,
+    .header-vivienda,
+    .header-asilo,
+    .header-donacion{
+        background-position: center;
     }
-}
+}  
 
-@media (width < 1327px){
-    header{
-        height: 500px;
-    }
-    h2{
-        font-size: 1.5em;
-        padding: 0 10px;
-    }
-    .carousel{
-        margin-left: 150px;
-    }
-    h1{
-        font-size: 3em;
-        margin-top: 90px;
-    }
-}
 
-@media (width < 1152px){
-    h1{
-        font-size: 3em;
-        margin-top: 20px;
-    }
-   .inicio-about{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
-   }
-   .inicio-textos{
-    width: 70%;
-   }
-   .carousel{
-    margin-left: 120px;
-    }
-    .como-donar{
-        padding: 0 30px;
+@media (width < 768px) {
+    .textos-header{
+        h1{
+         font-size: 3em;
+        }
+        h2{
+         font-size: 1.5em;
+         margin: 0 40px;
+        } 
+     }
+     .inicio-about{
+         padding: 0 40px;
+         .container {
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             .inicio-textos{
+                 margin: 40px;
+                 h3{
+                     text-align: center;
+                 }
+                 p{
+                     margin: 0px;
+                     text-align: justify;
+                 }
+             }
+             .inicio-animado{
+                 margin-bottom: 100px;
+             }
+         }
+     }
+     .header-vivienda{
+        h1{
+            font-size: $textMd;
+        }
+     }
+     .que-hacemos{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
         text-align: center;
-    }
-    .como-donar p{
-        margin: 20px 60px;
+        div{
+            width: 90%;
+        }
+     }
+     .mision{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            display: block;
+        }
+        p{
+            display: inline-block;
 
+        }
+     }
+     
+
+    .noticias-e-historias {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            "card1 card1"
+            "card2 card3"
+            "card4 card5";
+        margin: 100px;
     }
+    .header-secundario{
+        width: 100%;
+    }
+    .inicio-about{
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    
 }
 
